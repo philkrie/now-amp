@@ -15,6 +15,7 @@ exports.build = async ({ files, entrypoint }) => {
     return optimizedContent;
   });
 
+  console.log(typeof optimized);
   const result = new FileBlob({ data: optimized });
   
   return { [entrypoint]: result };
