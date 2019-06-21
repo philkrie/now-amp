@@ -1,5 +1,5 @@
 const { FileBlob, shouldServe } = require('@now/build-utils'); // eslint-disable-line import/no-extraneous-dependencies
-const { AmpOptimizer } = require('amp-toolbox-optimizer');
+const AmpOptimizer = require('amp-toolbox-optimizer');
 
 // const defaultOptions = {
 //   minifyCSS: true,
