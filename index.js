@@ -10,14 +10,10 @@ exports.build = async ({ files, entrypoint }) => {
   const { data } = await FileBlob.fromStream({ stream });
   const content = data.toString();
 
-  const optimized = ampOptimizer.transformHtml(content).then(optimizedContent => {
-    console.log(optimizedContent);
-    return optimizedContent;
+  const result = ampOptimizer.transformHtml(content).then(optimizedContent => {
+    return new FileBlob({ data: optimizedContent });;
   });
 
-  console.log('Optimized' + optimized);
-  const result = new FileBlob({ data: optimized });
-  
   return { [entrypoint]: result };
 };
 
