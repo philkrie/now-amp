@@ -1,0 +1,14 @@
+{
+    "name": "@now/amp-optimizer",
+    "version": "0.0.1",
+    "license": "MIT",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/zeit/now-builders.git",
+      "directory": "packages/now-amp-optimizer"
+    },
+    "dependencies": {
+      "amp-toolbox-optimizer": "1.2.0-alpha.2"
+    }
+  }
+  
