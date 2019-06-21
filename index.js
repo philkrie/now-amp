@@ -11,7 +11,7 @@ exports.build = async ({ files, entrypoint }) => {
   const content = data.toString();
 
   const result = ampOptimizer.transformHtml(content).then(optimizedContent => {
-    console.log(optimized);
+    console.log(optimizedContent);
     return optimizedContent;
   });
   
