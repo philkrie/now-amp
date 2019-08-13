@@ -1,6 +1,12 @@
 # [AMP](https://amp.dev/) Builder for [Now](https://zeit.co/home)
 
-A builder that takes any HTML page and generates an AMP page. If full conversion is not possible, it will flag and recommend next steps. Meant to simplify the process by removing AMP boilerplate and amp tags that have HTML equivalents. This effectively serves as an AMP compiler.
+A builder that takes any HTML page and generates an AMP page. If full conversion is not possible, it will flag and recommend next steps. 
+
+The goal of this project is to simplify the AMP development process by removing AMP boilerplate and amp tags that have HTML equivalents.
+
+This effectively serves as an AMP compiler.
+
+Initial version aims to add appropriate boilerplate and perform direct HTML -> AMP HTML tag conversions where possible.
 
 # Sample now.json Configuration
 
